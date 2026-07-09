@@ -8,8 +8,6 @@ export function Login() {
 
   function handleSubmit(e : React.FormEvent<HTMLFormElement>){
     e.preventDefault();
-    console.log("Email:", email);
-    console.log("Senha:", password);
   }
 
   return (
