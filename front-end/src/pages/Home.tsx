@@ -1,5 +1,6 @@
 import { Link } from "react-router"
 
+
 export function Home() {
     return(
         <div className="grid justify-center">
