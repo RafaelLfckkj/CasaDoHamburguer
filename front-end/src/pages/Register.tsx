@@ -3,6 +3,7 @@ import { Input } from "../components/Input";
 import { useState } from "react";
 
 import { Link } from "react-router";
+import { Button } from "../components/Button";
 
 export function Register() {
   const [name, setName] = useState("");
@@ -57,9 +58,8 @@ export function Register() {
           onChange={(e) => setCep(e.target.value)}
         />
 
-        <button className="bg-[#C92A0E] w-full py-2 rounded-md cursor-pointer text-white font-bold text-sm">
-          Cadastrar
-        </button>
+      <Button title="Criar conta"/>
+      <Button title="Já tenho uma Conta" variant="outline"/>
       </div>
     </form>
   );

@@ -3,6 +3,7 @@ import { Input } from "../components/Input";
 import { useState } from "react";
 
 import { Link } from "react-router";
+import { Button } from "../components/Button";
 
 export function Login() {
   const [email, setEmail] = useState("");
@@ -37,9 +38,9 @@ export function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button className="bg-[#C92A0E] w-full py-2 rounded-md cursor-pointer text-white font-bold text-sm">
-          Login
-        </button>
+        <Button title="Login" />
+        <Button title="Não tenho uma Conta" variant="outline"/>
+
       </div>
     </form>
   );
