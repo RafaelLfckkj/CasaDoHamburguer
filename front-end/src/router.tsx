@@ -8,7 +8,7 @@ import { Header } from "./components/Header";
 
 const Layout = () => {
   return(
-    <div className="flex flex-col min-h-screen bg-red-500">
+    <div className="flex flex-col min-h-screen bg-[#161410]">
       <Header/>
       <Outlet/>
     </div>

@@ -38,9 +38,13 @@ export function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <Button title="Login" />
-        <Button title="Não tenho uma Conta" variant="outline"/>
+   
+          <Button title="Login" />
 
+          <Link to="/register" className="w-full">
+            <Button title="Não tenho uma Conta" variant="outline" />
+          </Link>
+        
       </div>
     </form>
   );

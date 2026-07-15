@@ -25,11 +25,11 @@ export function Register() {
     >
       <div className="flex flex-col items-center gap-2 justify-center">
         <Link to="/">
-            <img
-          className="mb-4"
-          src="../public/logo.png"
-          alt="Logo da casa de Hamburguer"
-        />
+          <img
+            className="mb-4"
+            src="../public/logo.png"
+            alt="Logo da casa de Hamburguer"
+          />
         </Link>
 
         <Input
@@ -58,8 +58,13 @@ export function Register() {
           onChange={(e) => setCep(e.target.value)}
         />
 
-      <Button title="Criar conta"/>
-      <Button title="Já tenho uma Conta" variant="outline"/>
+       
+
+        <Button title="Criar conta" />
+        <Link to="/login" className="w-full" >
+          <Button title="Já tenho uma Conta" variant="outline" />
+        </Link>
+       
       </div>
     </form>
   );
