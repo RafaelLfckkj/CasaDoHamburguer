@@ -2,8 +2,9 @@ import express from "express";
 
 const app = express();
 
-app.get("/teste", (req, res) => {
-    res.json("Voce Acessou a rota inicial")
+app.post("/", (req, res) => {
+    res.json("oie isso é um teste");
+    
 })
 
 app.listen(3000, () => {
