@@ -15,7 +15,7 @@ export { prisma };
 export async function connection() {
   try {
     await prisma.$connect();
-    console.log("Conectado com o BD");
+    console.log("Conectado com o BD ");
   } catch (error) {
     console.log(error)
   }
