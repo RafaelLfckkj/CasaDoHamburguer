@@ -14,7 +14,7 @@ app.post("/login", async (req, res) => {
     where: { email, password: password },
   });
 
-  res.json(user);
+  res.status(200).json(user);
 });
 
 app.listen(3000, () => {
