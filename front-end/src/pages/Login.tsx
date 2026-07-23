@@ -14,6 +14,11 @@ export function Login() {
     e.preventDefault();
 
     try {
+      if (!email || !password) {
+        setError("Email e senha são obrigatórios");
+        return;
+      }
+
       const response = await fetch("http://localhost:3000/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -32,8 +37,8 @@ export function Login() {
         console.log(data);
       }
     } catch (error) {
-      console.log(error)
-      return
+      console.log(error);
+      return;
     }
   }
 
